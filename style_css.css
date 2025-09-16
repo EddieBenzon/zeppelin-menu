@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background: #0a0a0a;
+    color: #e8e8e8;
+    line-height: 1.4;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #1a1a1a 0%, #0d0d0d 100%);
+}
+
+.header {
+    background: linear-gradient(135deg, #2c1810 0%, #1a0e08 100%);
+    padding: 40px 20px 30px;
+    text-align: center;
+    border-bottom: 3px solid #d4af37;
+    position: relative;
+    overflow: hidden;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 20% 80%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(139, 69, 19, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.header h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.8rem;
+    color: #d4af37;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    position: relative;
+    z-index: 1;
+}
+
+.header p {
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: #b8b8b8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 1;
+}
+
+.menu-content {
+    padding: 30px 20px 100px;
+}
+
+.category {
+    margin-bottom: 40px;
+    background: rgba(26, 26, 26, 0.8);
+    border-radius: 0;
+    border-left: 4px solid #d4af37;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.category h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.6rem;
+    color: #d4af37;
+    padding: 20px;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: rgba(212, 175, 55, 0.1);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.menu-item {
+    padding: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.menu-item:hover {
+    background: rgba(212, 175, 55, 0.05);
+    transform: translateX(5px);
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 8px;
+}
+
+.item-name {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #f0f0f0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.item-price {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.3rem;
+    color: #d4af37;
+    font-weight: normal;
+    white-space: nowrap;
+    margin-left: 15px;
+}
+
+.price-line {
+    flex: 1;
+    height: 1px;
+    background: repeating-linear-gradient(
+        to right,
+        transparent,
+        transparent 3px,
+        rgba(212, 175, 55, 0.3) 3px,
+        rgba(212, 175, 55, 0.3) 6px
+    );
+    margin: 0 10px 3px 10px;
+    align-self: end;
+}
+
+.item-description {
+    color: #a8a8a8;
+    font-size: 0.85rem;
+    font-weight: 300;
+    line-height: 1.3;
+    font-style: italic;
+}
+
+.admin-section {
+    background: #0f0f0f;
+    padding: 25px 20px;
+    border-top: 2px solid #d4af37;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 70vh;
+    overflow-y: auto;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+.admin-section.visible {
+    transform: translateY(0);
+}
+
+.admin-section h3 {
+    font-family: 'Bebas Neue', cursive;
+    color: #d4af37;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.admin-section p {
+    color: #b8b8b8;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 15px;
+    background: #1a1a1a;
+    border: 1px solid #d4af37;
+    border-radius: 4px;
+    color: #e8e8e8;
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    resize: vertical;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #f4c430;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+button {
+    background: linear-gradient(135deg, #d4af37, #b8941f);
+    color: #0a0a0a;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex: 1;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #f4c430, #d4af37);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.reset-btn {
+    background: linear-gradient(135deg, #8b4513, #5d2f0a) !important;
+    color: #e8e8e8 !important;
+}
+
+.reset-btn:hover {
+    background: linear-gradient(135deg, #a0501a, #6b3510) !important;
+}
+
+.toggle-admin {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: linear-gradient(135deg, #d4af37, #b8941f);
+    color: #0a0a0a;
+    border: none;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.toggle-admin:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.6);
+}
+
+.close-admin {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    color: #d4af37;
+    font-size: 24px;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    padding: 5px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d4af37;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #f4c430;
+}

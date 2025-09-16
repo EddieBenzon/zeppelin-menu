@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zeppelin Caffe Music Bar</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 id="cafe-name">Zeppelin</h1>
+        <p id="cafe-tagline">Caffe Music Bar</p>
+      </div>
+
+      <div class="menu-content" id="menu-display">
+        <!-- Menu items will be generated here -->
+      </div>
+
+      <div class="admin-section" id="admin-section">
+        <button class="close-admin" onclick="toggleAdmin()">×</button>
+        <h3>Menu Editor</h3>
+        <p>Edit your menu in JSON format:</p>
+        <textarea
+          id="menu-editor"
+          placeholder="Loading menu data..."
+        ></textarea>
+        <div class="button-group">
+          <button onclick="updateMenu()">Update Menu</button>
+          <button class="reset-btn" onclick="resetMenu()">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <button
+      class="toggle-admin hidden"
+      id="admin-toggle"
+      onclick="toggleAdmin()"
+    >
+      ⚙
+    </button>
+
+    <!-- Load environment variables -->
+    <script src="js/config.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
