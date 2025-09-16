@@ -238,15 +238,6 @@ button:hover {
   box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
 }
 
-.reset-btn {
-  background: linear-gradient(135deg, #8b4513, #5d2f0a) !important;
-  color: #e8e8e8 !important;
-}
-
-.reset-btn:hover {
-  background: linear-gradient(135deg, #a0501a, #6b3510) !important;
-}
-
 .toggle-admin {
   position: fixed;
   bottom: 25px;

@@ -113,20 +113,6 @@ class ZeppelinMenu {
     }
   }
 
-  resetMenu() {
-    if (confirm("Reset to default menu? This cannot be undone.")) {
-      this.menuData = { ...CONFIG.DEFAULT_MENU };
-      this.saveMenuData();
-      document.getElementById("menu-editor").value = JSON.stringify(
-        this.menuData,
-        null,
-        2
-      );
-      this.renderMenu();
-      alert("Menu reset!");
-    }
-  }
-
   validateMenuData(data) {
     // Basic validation - ensure required structure exists
     return (

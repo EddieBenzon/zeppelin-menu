@@ -30,7 +30,7 @@ try {
   const adminPassword = process.env.ADMIN_PASSWORD;
   const adminKey = process.env.ADMIN_KEY;
 
-  console.log("🔍 Checking environment variables...");
+  console.log("Checking environment variables...");
   console.log("ADMIN_PASSWORD:", adminPassword ? "SET" : "MISSING");
   console.log("ADMIN_KEY:", adminKey ? "SET" : "MISSING");
 
