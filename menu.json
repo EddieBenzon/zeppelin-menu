@@ -3,32 +3,12 @@
   "tagline": "Caffe Music Bar",
   "categories": [
     {
-      "name": "Coffee & Espresso",
+      "name": "Kava",
       "items": [
         {
           "name": "Espresso",
           "description": "Strong Italian shot, bold and pure",
           "price": "8 kn"
-        },
-        {
-          "name": "Double Espresso",
-          "description": "When one shot isn't enough",
-          "price": "12 kn"
-        },
-        {
-          "name": "Cappuccino",
-          "description": "Perfect harmony of coffee and milk foam",
-          "price": "12 kn"
-        },
-        {
-          "name": "Latte",
-          "description": "Smooth and creamy, easy listening",
-          "price": "14 kn"
-        },
-        {
-          "name": "Macchiato",
-          "description": "Espresso marked with milk foam",
-          "price": "10 kn"
         }
       ]
     },
