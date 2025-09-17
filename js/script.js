@@ -105,13 +105,16 @@ class ZeppelinMenu {
         document.getElementById("menu-editor").value
       );
 
+      // Basic validation
       if (!this.validateMenuData(newMenuData)) {
         throw new Error("Invalid menu structure");
       }
 
+      // Get password from user
       const password = prompt("Enter admin password to save changes:");
       if (!password) return;
 
+      // Show loading state
       const updateButton = document.querySelector(
         'button[onclick="updateMenu()"]'
       );
@@ -119,6 +122,7 @@ class ZeppelinMenu {
       updateButton.textContent = "Saving...";
       updateButton.disabled = true;
 
+      // Send to Netlify function
       const response = await fetch("/.netlify/functions/update-menu", {
         method: "POST",
         headers: {
@@ -133,6 +137,7 @@ class ZeppelinMenu {
       const result = await response.json();
 
       if (response.ok) {
+        // Update local data
         this.menuData = newMenuData;
         this.renderMenu();
 
@@ -142,7 +147,7 @@ class ZeppelinMenu {
         throw new Error(result.error || "Failed to update menu");
       }
     } catch (error) {
-      alert("Error: " + error.message);
+      alert("❌ Error: " + error.message);
       console.error("Menu update error:", error);
     } finally {
       // Reset button
