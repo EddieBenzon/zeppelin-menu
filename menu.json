@@ -1,0 +1,86 @@
+{
+  "cafeName": "Zeppelin",
+  "tagline": "Caffe Music Bar",
+  "categories": [
+    {
+      "name": "Coffee & Espresso",
+      "items": [
+        {
+          "name": "Espresso",
+          "description": "Strong Italian shot, bold and pure",
+          "price": "8 kn"
+        },
+        {
+          "name": "Double Espresso",
+          "description": "When one shot isn't enough",
+          "price": "12 kn"
+        },
+        {
+          "name": "Cappuccino",
+          "description": "Perfect harmony of coffee and milk foam",
+          "price": "12 kn"
+        },
+        {
+          "name": "Latte",
+          "description": "Smooth and creamy, easy listening",
+          "price": "14 kn"
+        },
+        {
+          "name": "Macchiato",
+          "description": "Espresso marked with milk foam",
+          "price": "10 kn"
+        }
+      ]
+    },
+    {
+      "name": "Beverages",
+      "items": [
+        {
+          "name": "Croatian Beer",
+          "description": "Local craft selection",
+          "price": "15 kn"
+        },
+        {
+          "name": "Wine Selection",
+          "description": "Red & white by the glass",
+          "price": "18 kn"
+        },
+        {
+          "name": "Rakija",
+          "description": "Traditional Croatian brandy",
+          "price": "12 kn"
+        },
+        {
+          "name": "Fresh Juice",
+          "description": "Orange, apple, or mixed",
+          "price": "12 kn"
+        },
+        {
+          "name": "Coca Cola",
+          "description": "Classic refreshment",
+          "price": "8 kn"
+        }
+      ]
+    },
+    {
+      "name": "Light Bites",
+      "items": [
+        {
+          "name": "Toast",
+          "description": "Grilled sandwich with ham & cheese",
+          "price": "18 kn"
+        },
+        {
+          "name": "Croissant",
+          "description": "Fresh buttery pastry",
+          "price": "8 kn"
+        },
+        {
+          "name": "Pita",
+          "description": "Traditional Balkan pastry",
+          "price": "12 kn"
+        }
+      ]
+    }
+  ]
+}

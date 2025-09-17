@@ -1,7 +1,7 @@
 {
   "name": "zeppelin-menu",
   "version": "1.0.0",
-  "description": "Zeppelin Caffe Music Bar - Secure Menu Website",
+  "description": "Zeppelin Caffe Music Bar - Secure Menu Website with Real Backend",
   "main": "index.html",
   "scripts": {
     "build": "node build.js",
@@ -17,10 +17,14 @@
     "restaurant",
     "cafe",
     "mobile",
-    "qr-code"
+    "qr-code",
+    "netlify-functions"
   ],
-  "author": "Your Name",
+  "author": "Eddie Benzon",
   "license": "MIT",
+  "dependencies": {
+    "@octokit/rest": "^19.0.0"
+  },
   "devDependencies": {
     "http-server": "^14.1.1"
   }

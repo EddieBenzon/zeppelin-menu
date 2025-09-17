@@ -1,16 +1,10 @@
-// Configuration - Secure version with no hardcoded secrets
-// Secrets are injected during build process from environment variables
-
 const CONFIG = {
-  // These will be replaced during build with actual values from Netlify environment variables
   ADMIN_PASSWORD_HASH: "__ADMIN_PASSWORD_HASH__",
   ADMIN_KEY: "__ADMIN_KEY__",
 
-  // Safe to hardcode - not sensitive
   API_BASE_URL: window.location.origin,
   STORAGE_KEY: "zeppelinMenuData",
 
-  // Default menu data
   DEFAULT_MENU: {
     cafeName: "Zeppelin",
     tagline: "Caffe Music Bar",
@@ -99,15 +93,13 @@ const CONFIG = {
   },
 };
 
-// Secure authentication helper
 const AUTH = {
-  // Hash function for password validation
   simpleHash: function (str) {
     let hash = 0;
     for (let i = 0; i < str.length; i++) {
       const char = str.charCodeAt(i);
       hash = (hash << 5) - hash + char;
-      hash = hash & hash; // Convert to 32bit integer
+      hash = hash & hash;
     }
     return hash.toString();
   },

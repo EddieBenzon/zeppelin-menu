@@ -1,19 +1,30 @@
 // Main application logic
 class ZeppelinMenu {
   constructor() {
-    this.menuData = this.loadMenuData();
+    this.menuData = null;
     this.init();
   }
 
-  init() {
+  async init() {
+    await this.loadMenuData();
     this.renderMenu();
     this.checkAdminAccess();
     this.bindEvents();
   }
 
-  loadMenuData() {
-    const saved = localStorage.getItem(CONFIG.STORAGE_KEY);
-    return saved ? JSON.parse(saved) : CONFIG.DEFAULT_MENU;
+  async loadMenuData() {
+    try {
+      const response = await fetch("/menu.json");
+      if (response.ok) {
+        this.menuData = await response.json();
+        console.log("Menu loaded from server");
+        return;
+      }
+    } catch (error) {
+      console.warn("Could not load menu from server, using default");
+    }
+
+    this.menuData = CONFIG.DEFAULT_MENU;
   }
 
   saveMenuData() {
@@ -21,11 +32,9 @@ class ZeppelinMenu {
   }
 
   renderMenu() {
-    // Update header
     document.getElementById("cafe-name").textContent = this.menuData.cafeName;
     document.getElementById("cafe-tagline").textContent = this.menuData.tagline;
 
-    // Generate menu HTML
     const menuDisplay = document.getElementById("menu-display");
     menuDisplay.innerHTML = "";
 
@@ -90,31 +99,78 @@ class ZeppelinMenu {
     }
   }
 
-  updateMenu() {
+  async updateMenu() {
     try {
       const newMenuData = JSON.parse(
         document.getElementById("menu-editor").value
       );
 
-      // Basic validation
       if (!this.validateMenuData(newMenuData)) {
         throw new Error("Invalid menu structure");
       }
 
-      this.menuData = newMenuData;
-      this.saveMenuData();
-      this.renderMenu();
+      const password = prompt("Enter admin password to save changes:");
+      if (!password) return;
 
-      alert("Menu updated successfully!");
-      this.toggleAdmin();
+      const updateButton = document.querySelector(
+        'button[onclick="updateMenu()"]'
+      );
+      const originalText = updateButton.textContent;
+      updateButton.textContent = "Saving...";
+      updateButton.disabled = true;
+
+      const response = await fetch("/.netlify/functions/update-menu", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          menuData: newMenuData,
+          password: password,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        this.menuData = newMenuData;
+        this.renderMenu();
+
+        alert("🎸 " + result.message);
+        this.toggleAdmin();
+      } else {
+        throw new Error(result.error || "Failed to update menu");
+      }
     } catch (error) {
-      alert("Invalid JSON format or menu structure. Please check your data.");
+      alert("Error: " + error.message);
       console.error("Menu update error:", error);
+    } finally {
+      // Reset button
+      const updateButton = document.querySelector(
+        'button[onclick="updateMenu()"]'
+      );
+      if (updateButton) {
+        updateButton.textContent = "Update Menu";
+        updateButton.disabled = false;
+      }
+    }
+  }
+
+  resetMenu() {
+    if (confirm("Reset to default menu? This cannot be undone.")) {
+      this.menuData = { ...CONFIG.DEFAULT_MENU };
+      this.saveMenuData();
+      document.getElementById("menu-editor").value = JSON.stringify(
+        this.menuData,
+        null,
+        2
+      );
+      this.renderMenu();
+      alert("Menu reset!");
     }
   }
 
   validateMenuData(data) {
-    // Basic validation - ensure required structure exists
     return (
       data &&
       typeof data === "object" &&
@@ -137,7 +193,6 @@ class ZeppelinMenu {
   }
 
   bindEvents() {
-    // Close admin panel when clicking outside
     document.addEventListener("click", (event) => {
       const adminSection = document.getElementById("admin-section");
       const toggleButton = document.getElementById("admin-toggle");
@@ -153,7 +208,6 @@ class ZeppelinMenu {
   }
 }
 
-// Global functions for HTML onclick handlers
 function toggleAdmin() {
   app.toggleAdmin();
 }
@@ -166,7 +220,6 @@ function resetMenu() {
   app.resetMenu();
 }
 
-// Initialize app when DOM is loaded
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", async function () {
   window.app = new ZeppelinMenu();
 });
