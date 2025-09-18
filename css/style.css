@@ -219,7 +219,6 @@ textarea:focus {
 button {
   background: linear-gradient(135deg, #d4af37, #b8941f);
   color: #0a0a0a;
-  padding: 12px 30px;
   border: none;
   border-radius: 0;
   font-family: "Oswald", sans-serif;
@@ -239,9 +238,6 @@ button:hover {
 }
 
 .toggle-admin {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: fixed;
   bottom: 25px;
   right: 25px;
