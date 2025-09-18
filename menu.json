@@ -3,82 +3,70 @@
   "tagline": "Caffe Music Bar",
   "categories": [
     {
-      "name": "Coffee & Espresso",
+      "name": "Kava",
       "items": [
         {
           "name": "Espresso",
-          "description": "Strong Italian shot, bold and pure",
-          "price": "8 kn"
+          "price": "1.60 €"
         },
         {
-          "name": "Double Espresso",
-          "description": "When one shot isn't enough",
-          "price": "12 kn"
+          "name": "Kava mlijeko - mala",
+          "price": "1.80 €"
         },
         {
-          "name": "Cappuccino",
-          "description": "Perfect harmony of coffee and milk foam",
-          "price": "12 kn"
-        },
-        {
-          "name": "Latte",
-          "description": "Smooth and creamy, easy listening",
-          "price": "14 kn"
-        },
-        {
-          "name": "Macchiato",
-          "description": "Espresso marked with milk foam",
-          "price": "10 kn"
+          "name": "Kava mlijeko - velika",
+          "price": "2.00 €"
         }
       ]
     },
     {
-      "name": "Beverages",
+      "name": "Topli napitci",
       "items": [
         {
-          "name": "Croatian Beer",
-          "description": "Local craft selection",
-          "price": "15 kn"
+          "name": "Čaj",
+          "price": "2.20 €"
         },
         {
-          "name": "Wine Selection",
-          "description": "Red & white by the glass",
-          "price": "18 kn"
+          "name": "Čaj Premium",
+          "price": "4.00 €"
         },
         {
-          "name": "Rakija",
-          "description": "Traditional Croatian brandy",
-          "price": "12 kn"
-        },
-        {
-          "name": "Fresh Juice",
-          "description": "Orange, apple, or mixed",
-          "price": "12 kn"
-        },
-        {
-          "name": "Coca Cola",
-          "description": "Classic refreshment",
-          "price": "8 kn"
+          "name": "Pišaka 0,33L",
+          "price": "14.00 €"
         }
       ]
     },
     {
-      "name": "Light Bites",
+      "name": "Bezalkoholna pića",
       "items": [
         {
-          "name": "Toast",
-          "description": "Grilled sandwich with ham & cheese",
-          "price": "18 kn"
+          "name": "Prirodna voda",
+          "price": "2.50 €"
         },
         {
-          "name": "Croissant",
-          "description": "Fresh buttery pastry",
-          "price": "8 kn"
+          "name": "Mineralna voda",
+          "price": "2.50 €"
         },
         {
-          "name": "Pita",
-          "description": "Traditional Balkan pastry",
-          "price": "12 kn"
+          "name": "Jamnica Sensation",
+          "price": "2.80 €"
+        }
+      ]
+    },
+    {
+      "name": "Pivo",
+      "items": [
+        {
+          "name": "Ozujsko 0,33L",
+          "price": "3.00 €"
+        },
+        {
+          "name": "Ozujsko 0,50L",
+          "price": "3.20 €"
+        },
+        {
+          "name": "Staropramen 0,50L",
+          "price": "3.40 €"
         }
       ]
     }
