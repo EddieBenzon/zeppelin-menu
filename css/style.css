@@ -219,7 +219,6 @@ textarea:focus {
 button {
   background: linear-gradient(135deg, #d4af37, #b8941f);
   color: #0a0a0a;
-  padding: 15px 25px;
   border: none;
   border-radius: 0.3rem;
   font-family: "Oswald", sans-serif;
@@ -236,6 +235,10 @@ button:hover {
   background: linear-gradient(135deg, #f4c430, #d4af37);
   transform: translateY(-1px);
   box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.update-menu-button {
+  padding: 15px 25px;
 }
 
 .toggle-admin {
