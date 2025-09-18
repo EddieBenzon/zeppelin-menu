@@ -242,12 +242,11 @@ button:hover {
   position: fixed;
   bottom: 25px;
   right: 25px;
+  width: 150px;
   background: linear-gradient(135deg, #d4af37, #b8941f);
   color: #0a0a0a;
+  padding: 10px 24px;
   border: none;
-  border-radius: 50%;
-  width: 65px;
-  height: 65px;
   font-size: 20px;
   cursor: pointer;
   box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
