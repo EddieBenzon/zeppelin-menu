@@ -7,15 +7,23 @@
       "items": [
         {
           "name": "Espresso",
-          "price": "1.60 €"
-        },
-        {
-          "name": "Kava mlijeko - mala",
           "price": "1.80 €"
         },
         {
-          "name": "Kava mlijeko - velika",
+          "name": "Kava mlijeko - mala",
           "price": "2.00 €"
+        },
+        {
+          "name": "Kava mlijeko - velika",
+          "price": "2.20 €"
+        },
+        {
+          "name": "Kava šlag - mala",
+          "price": "2.20 €"
+        },
+        {
+          "name": "Kava šlag - velika",
+          "price": "2.40 €"
         }
       ]
     },
@@ -59,6 +67,48 @@
         {
           "name": "Ozujsko 0,50L",
           "price": "3.20 €"
+        },
+        {
+          "name": "Staropramen 0,50L",
+          "price": "3.40 €"
+        }
+      ]
+    },
+    {
+      "name": "CRAFT",
+      "items": [
+        {
+          "name": "Familia Karet 0,5L",
+          "price": "4.30 €"
+        },
+        {
+          "name": "Familia Bracera 0,5L",
+          "price": "4.60 €"
+        },
+        {
+          "name": "Staropramen 0,50L",
+          "price": "3.40 €"
+        },
+        {
+          "name": "Staropramen 0,50L",
+          "price": "3.40 €"
+        }
+      ]
+    },
+    {
+      "name": "Vino",
+      "items": [
+        {
+          "name": "Familia Karet 0,5L",
+          "price": "4.30 €"
+        },
+        {
+          "name": "Familia Bracera 0,5L",
+          "price": "4.60 €"
+        },
+        {
+          "name": "Staropramen 0,50L",
+          "price": "3.40 €"
         },
         {
           "name": "Staropramen 0,50L",
