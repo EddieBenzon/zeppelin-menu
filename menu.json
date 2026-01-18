@@ -24,6 +24,34 @@
         {
           "name": "Kava šlag - velika",
           "price": "2.40 €"
+        },
+        {
+          "name": "Kava mix - velika",
+          "price": "2.60 €"
+        },
+        {
+          "name": "Bijela kava",
+          "price": "2.40 €"
+        },
+        {
+          "name": "Ledena kava",
+          "price": "2.40 €"
+        },
+        {
+          "name": "Cappuccino",
+          "price": "2.40 €"
+        },
+        {
+          "name": "Kava bezkofeinska",
+          "price": "2.00 €"
+        },
+        {
+          "name": "Kava bezkofeinska mlijeko",
+          "price": "2.40 €"
+        },
+        {
+          "name": "Kava bezkofeinska šlag",
+          "price": "2.60 €"
         }
       ]
     },
@@ -32,11 +60,23 @@
       "items": [
         {
           "name": "Čaj",
-          "price": "2.20 €"
+          "price": "2.40 €"
         },
         {
-          "name": "Čaj Premium",
-          "price": "4.00 €"
+          "name": "Nescafe",
+          "price": "2.60 €"
+        },
+        {
+          "name": "Kakao",
+          "price": "2.50 €"
+        },
+        {
+          "name": "Vruća čokolada",
+          "price": "3.50 €"
+        },
+        {
+          "name": "Rum punch",
+          "price": "2.80 €"
         }
       ]
     },
@@ -48,12 +88,52 @@
           "price": "2.50 €"
         },
         {
-          "name": "Mineralna voda",
+          "name": "Gazirana voda",
           "price": "2.50 €"
         },
         {
           "name": "Jamnica Sensation",
-          "price": "2.80 €"
+          "price": "3.00 €"
+        },
+        {
+          "name": "Limunska trava",
+          "price": "3.00 €"
+        },
+        {
+          "name": "Jana vitamin",
+          "price": "3.00 €"
+        },
+        {
+          "name": "Ledeni čaj",
+          "price": "3.00 €"
+        },
+        {
+          "name": "Gazirani sok",
+          "price": "3.00 €"
+        },
+        {
+          "name": "Prirodni sok",
+          "price": "3.20 €"
+        },
+        {
+          "name": "Cedevita",
+          "price": "2.50 €"
+        },
+        {
+          "name": "Energetski napitak",
+          "price": "4.20 €"
+        },
+        {
+          "name": "Hidra",
+          "price": "3.60 €"
+        },
+        {
+          "name": "Limunada",
+          "price": "3.50 €"
+        },
+        {
+          "name": "Narančada",
+          "price": "4.00 €"
         }
       ]
     },
@@ -70,28 +150,68 @@
         },
         {
           "name": "Staropramen 0,50L",
+          "price": "3.60 €"
+        },
+        {
+          "name": "Nikšičko 0,50L",
+          "price": "3.50 €"
+        },
+        {
+          "name": "Vukovarsko 0,50L",
           "price": "3.40 €"
+        },
+        {
+          "name": "Heineken 0,33L",
+          "price": "4.00 €"
+        },
+        {
+          "name": "Franziskaner 0,50L",
+          "price": "4.70 €"
+        },
+        {
+          "name": "Stella Artois točeno 0,25L",
+          "price": "3.30 €"
+        },
+        {
+          "name": "Stella Artois točeno 0,40L",
+          "price": "3.80 €"
+        },
+        {
+          "name": "Grif točeno 0,33L",
+          "price": "3.50 €"
+        },
+        {
+          "name": "Grif točeno 0,50L",
+          "price": "4.00 €"
         }
       ]
     },
     {
-      "name": "CRAFT",
+      "name": "Craft pivo",
       "items": [
         {
-          "name": "Familia Karet 0,5L",
+          "name": "Familia Karet 0,50L",
           "price": "4.30 €"
         },
         {
-          "name": "Familia Bracera 0,5L",
+          "name": "Familia Bracera 0,50L",
           "price": "4.60 €"
         },
         {
-          "name": "Staropramen 0,50L",
-          "price": "3.40 €"
+          "name": "Familia Ferata 0,50L",
+          "price": "4.60 €"
         },
         {
-          "name": "Staropramen 0,50L",
-          "price": "3.40 €"
+          "name": "Familia Reoplan 0,50L",
+          "price": "4.80 €"
+        },
+        {
+          "name": "Familia Stout 0,50L",
+          "price": "5.20 €"
+        },
+        {
+          "name": "Familia Perun 0,50L",
+          "price": "5.20 €"
         }
       ]
     },
@@ -99,20 +219,130 @@
       "name": "Vino",
       "items": [
         {
-          "name": "Familia Karet 0,5L",
+          "name": "Testamanet Babić 0,70L",
+          "price": "35.00 €"
+        },
+        {
+          "name": "Merga Victa Pošip 0,70L",
+          "price": "35.00 €"
+        },
+        {
+          "name": "Cossetto Prima Luce Malvazija 0,70L",
+          "price": "38.00 €"
+        },
+        {
+          "name": "Bijelo vino 0,187L",
+          "price": "4.50 €"
+        },
+        {
+          "name": "Crno vino 0,187L",
+          "price": "4.50 €"
+        }
+      ]
+    },
+    {
+      "name": "Žestoka Pića",
+      "items": [
+        {
+          "name": "Stock 84 0,33L",
+          "price": "3.00 €"
+        },
+        {
+          "name": "Jagermeister 0,33L",
+          "price": "3.20 €"
+        },
+        {
+          "name": "Svarog vodka 0,33L",
+          "price": "3.20 €"
+        },
+        {
+          "name": "Old Pilots Vodka 0,33L",
+          "price": "5.00 €"
+        },
+        {
+          "name": "Jack Daniels 0,33L",
+          "price": "3.40 €"
+        },
+        {
+          "name": "Johhnie Walker Red 0,33L",
+          "price": "3.20 €"
+        },
+        {
+          "name": "Johhnie Walker Black 0,33L",
+          "price": "3.70 €"
+        },
+        {
+          "name": "Chivas Regal 0,33L",
           "price": "4.30 €"
         },
         {
-          "name": "Familia Bracera 0,5L",
-          "price": "4.60 €"
+          "name": "Jameson 0,33L",
+          "price": "3.80 €"
         },
         {
-          "name": "Staropramen 0,50L",
+          "name": "Gordons Gin 0,33L",
+          "price": "3.20 €"
+        },
+        {
+          "name": "Hendricks 0,33L",
+          "price": "4.40 €"
+        },
+        {
+          "name": "Old Pilots Gin 0,33L",
+          "price": "6.00 €"
+        },
+        {
+          "name": "Olmeca Tequila 0,33L",
+          "price": "3.20 €"
+        },
+        {
+          "name": "Campari 0,33L",
+          "price": "3.20 €"
+        },
+        {
+          "name": "Baileys 0,33L",
           "price": "3.40 €"
         },
         {
-          "name": "Staropramen 0,50L",
+          "name": "Bacardi 0,33L",
           "price": "3.40 €"
+        },
+        {
+          "name": "Martell 0,33L",
+          "price": "4.80 €"
+        },
+        {
+          "name": "Martini 0,33L",
+          "price": "3.80 €"
+        }
+      ]
+    },
+    {
+      "name": "Rakije i Likeri",
+      "items": [
+        {
+          "name": "Pelinkovac Dalmacijavino 0,33L",
+          "price": "2.30 €"
+        },
+        {
+          "name": "Badel Antique",
+          "price": "2.80 €"
+        },
+        {
+          "name": "Barun 0,33L",
+          "price": "2.50 €"
+        },
+        {
+          "name": "Orahovac 0,33L",
+          "price": "2.30 €"
+        },
+        {
+          "name": "Rakija",
+          "price": "2.30 €"
+        },
+        {
+          "name": "Wise Grus",
+          "price": "3.20 €"
         }
       ]
     }
