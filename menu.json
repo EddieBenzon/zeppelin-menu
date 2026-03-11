@@ -3,6 +3,23 @@
   "tagline": "Caffe Music Bar",
   "categories": [
     {
+      "name": "Novo u ponudi",
+      "items": [
+        {
+          "name": "Kava + Jana Vitamin",
+          "price": "3.00 €"
+        },
+        {
+          "name": "Zlatni Medvjed 0,5l",
+          "price": "3.80 €"
+        },
+        {
+          "name": "Hidra Ananas Limeta - novi okus",
+          "price": "3.60 €"
+        }
+      ]
+    },
+    {
       "name": "Kava",
       "items": [
         {
